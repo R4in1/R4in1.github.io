@@ -6,7 +6,7 @@
   <link href="https://r4in1.github.io/atom.xml" rel="self"/>
   
   <link href="https://r4in1.github.io/"/>
-  <updated>2020-11-23T09:29:06.587Z</updated>
+  <updated>2020-11-23T08:56:30.254Z</updated>
   <id>https://r4in1.github.io/</id>
   
   <author>
@@ -15,39 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>post</title>
-    <link href="https://r4in1.github.io/2020/11/23/post/"/>
-    <id>https://r4in1.github.io/2020/11/23/post/</id>
-    <published>2020-11-23T09:27:30.000Z</published>
-    <updated>2020-11-23T09:29:06.587Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="myPOST"><a href="#myPOST" class="headerlink" title="myPOST"></a>myPOST</h1>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;myPOST&quot;&gt;&lt;a href=&quot;#myPOST&quot; class=&quot;headerlink&quot; title=&quot;myPOST&quot;&gt;&lt;/a&gt;myPOST&lt;/h1&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hello world --R4in1</title>
-    <link href="https://r4in1.github.io/2020/11/23/hello-world-R4in1/"/>
-    <id>https://r4in1.github.io/2020/11/23/hello-world-R4in1/</id>
-    <published>2020-11-23T09:05:41.000Z</published>
-    <updated>2020-11-23T09:05:41.677Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>testsite</title>
