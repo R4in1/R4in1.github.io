@@ -6,7 +6,7 @@
   <link href="https://r4in1.github.io/atom.xml" rel="self"/>
   
   <link href="https://r4in1.github.io/"/>
-  <updated>2020-11-28T11:50:23.840Z</updated>
+  <updated>2020-11-28T12:44:57.279Z</updated>
   <id>https://r4in1.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://r4in1.github.io/2020/11/23/hello-world/"/>
     <id>https://r4in1.github.io/2020/11/23/hello-world/</id>
     <published>2020-11-23T08:51:39.352Z</published>
-    <updated>2020-11-28T11:50:23.840Z</updated>
+    <updated>2020-11-28T12:44:57.279Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h1><p>你好，欢迎来到R4in1’s Blog.</p><p>本人大三狗一枚，可能会偶尔分享一些信息安全方面的知识。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h1><p>你好，欢迎来到R4in1’s Blog.</p><p>本人大三狗一枚，可能会偶尔分享一些信息安全方面的知识。</p><a class="btn-beautify button--animated " href="https://R4in1.github.io"   title="R4in1"><span>R4in1</span></a>]]></content>
     
     
       
