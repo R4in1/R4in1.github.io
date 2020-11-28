@@ -6,7 +6,7 @@
   <link href="https://r4in1.github.io/atom.xml" rel="self"/>
   
   <link href="https://r4in1.github.io/"/>
-  <updated>2020-11-23T08:56:30.254Z</updated>
+  <updated>2020-11-28T11:50:23.840Z</updated>
   <id>https://r4in1.github.io/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>testsite</title>
-    <link href="https://r4in1.github.io/2020/11/23/testsite/"/>
-    <id>https://r4in1.github.io/2020/11/23/testsite/</id>
-    <published>2020-11-23T08:56:30.000Z</published>
-    <updated>2020-11-23T08:56:30.254Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
