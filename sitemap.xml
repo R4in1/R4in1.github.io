@@ -76,13 +76,6 @@
 
   
   <url>
-    <loc>https://r4in1.github.io/categories/MIX/</loc>
-    <lastmod>2020-11-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://r4in1.github.io/categories/CTF/</loc>
     <lastmod>2020-11-29</lastmod>
     <changefreq>daily</changefreq>
@@ -91,6 +84,13 @@
   
   <url>
     <loc>https://r4in1.github.io/categories/CTF/WEB/</loc>
+    <lastmod>2020-11-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://r4in1.github.io/categories/MIX/</loc>
     <lastmod>2020-11-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
