@@ -6,7 +6,7 @@
   <link href="https://r4in1.github.io/atom.xml" rel="self"/>
   
   <link href="https://r4in1.github.io/"/>
-  <updated>2020-11-28T14:19:24.909Z</updated>
+  <updated>2020-11-29T03:12:29.483Z</updated>
   <id>https://r4in1.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker学习笔记</title>
+    <link href="https://r4in1.github.io/2020/11/29/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://r4in1.github.io/2020/11/29/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-11-29T02:19:24.000Z</published>
+    <updated>2020-11-29T03:12:29.483Z</updated>
+    
+    <content type="html"><![CDATA[<p>docker一些常用的命令以及使用方法</p><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">docker images <span class="comment"># 列出已加载的镜像</span></span><br><span class="line">docker pull ubuntu <span class="comment"># 获取镜像（默认最新版，可加:1.1.1获取特定版本）</span></span><br><span class="line">docker search httpd <span class="comment"># 搜索镜像</span></span><br><span class="line">docker ps -a <span class="comment"># 列出所有容器的状态，不加-a为列出正在运行的容器</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -- run docker ------------------------------</span></span><br><span class="line">docker run -it ubuntu /bin/bash <span class="comment"># 启动一个容器（同时进入容器命令行）</span></span><br><span class="line"><span class="comment"># 参数说明：-i 交互模式，-t 终端，ubuntu 使用ubuntu镜像，/bin/bash 执行的命令（获取一个交互式的shell）</span></span><br><span class="line">docker run -itd --name myUbuntu ubuntu /bin/bash <span class="comment"># 后台启动一个容器（不会进入容器的命令行）</span></span><br><span class="line"><span class="comment"># 参数说明：-d 后台运行，--name 为容器命名</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -- manage containers -----------------------</span></span><br><span class="line">docker start &lt;容器id/容器名字&gt; <span class="comment"># 启动一个已停止的容器</span></span><br><span class="line">docker stop &lt;容器id/容器名字&gt; <span class="comment"># 停止一个正在运行的容器</span></span><br><span class="line">docker restart &lt;容器id/容器名字&gt; <span class="comment"># 重启一个容器</span></span><br><span class="line">docker rm -f &lt;容器id/容器名字&gt; <span class="comment"># 删除一个容器，-f参数为强制删除</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -- enter containers ------------------------</span></span><br><span class="line">docker <span class="built_in">exec</span> -it &lt;容器id/容器名字&gt; /bin/bash <span class="comment"># 推荐使用，退出不会停止容器</span></span><br><span class="line">docker attach &lt;容器id/容器名字&gt; <span class="comment"># 退出会停止容器</span></span><br></pre></td></tr></table></figure><h1 id="使用docker创建web应用"><a href="#使用docker创建web应用" class="headerlink" title="使用docker创建web应用"></a>使用docker创建web应用</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8848:5000 training/webapp python app.py</span><br><span class="line"><span class="comment"># 当本地不存在该镜像时，docker会自动下载该镜像</span></span><br><span class="line"><span class="comment"># -p参数为端口映射，将容器的5000端口映射到主机的8848端口上</span></span><br><span class="line"><span class="comment"># -P内部端口随机映射到主机的一个端口上</span></span><br><span class="line"><span class="comment"># python app.py为执行的命令，即启动flask服务</span></span><br><span class="line"></span><br><span class="line">docker port &lt;容器id/容器名字&gt; <span class="comment"># 查看一个容器的端口映射情况</span></span><br><span class="line">docker logs -f &lt;容器id/容器名字&gt; <span class="comment"># 查看容器的日志，-f可以使该命令已知执行</span></span><br><span class="line">docker top &lt;容器id/容器名字&gt; <span class="comment"># 查看容器内部运行的进程</span></span><br></pre></td></tr></table></figure><h1 id="下次再更（一定）"><a href="#下次再更（一定）" class="headerlink" title="下次再更（一定）"></a>下次再更（一定）</h1>]]></content>
+    
+    
+    <summary type="html">关于docker的使用方法以及学习记录</summary>
+    
+    
+    
+    <category term="CTF" scheme="https://r4in1.github.io/categories/CTF/"/>
+    
+    
+    <category term="docker" scheme="https://r4in1.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>Javascript模板字符串</title>
